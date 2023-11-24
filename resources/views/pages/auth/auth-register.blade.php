@@ -17,7 +17,7 @@
 
             <form method="POST">
                 @csrf
-                <div class="form-group">
+                <div class="form-group ">
                         <label for="frist_name">Name</label>
                         <input id="frist_name" type="text"
                             class="form-control @error('name')
@@ -39,8 +39,6 @@
 
                             @enderror"
                             name="email">
-                            <div class="invalid-feedback">
-                            </div>
                             @error('email')
                             <div class="invalid-feedback">
                                 {{ $message }}
@@ -82,6 +80,9 @@
                     </button>
                 </div>
             </form>
+        </div>
+    </div>
+
 
 @endsection
 
